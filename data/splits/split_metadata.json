@@ -1,0 +1,21 @@
+{
+  "train_size": 10500,
+  "test_size": 4500,
+  "train_positive_class": 3500,
+  "test_positive_class": 1500,
+  "feature_names": [
+    "Pregnancies",
+    "PlasmaGlucose",
+    "DiastolicBloodPressure",
+    "TricepsThickness",
+    "SerumInsulin",
+    "BMI",
+    "DiabetesPedigree",
+    "Age"
+  ],
+  "split_config": {
+    "test_size": 0.3,
+    "random_state": 0,
+    "stratify": true
+  }
+}
