@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  lambda-training:
+    build:
+      context: ../../
+      dockerfile: environments/docker/Dockerfile
+    container_name: diabetes-lambda-env
+    volumes:
+      - ../../src:/app/src
+      - ../../data:/app/data
+      - ../../mlflow/docker:/app/mlflow/docker
+      - ../../models:/app/models
+      - ../../lambda_package:/app/lambda_package
+    environment:
+      - MLFLOW_TRACKING_URI=file:///app/mlflow/docker/mlflow.db
+      - PYTHONPATH=/app/src
+    tty: true
+    stdin_open: true
