@@ -14,6 +14,8 @@ TRAIN_TEST_SPLIT_CONFIG = {
     "stratify": True  # Maintain class balance
 }
 
+NUMERICAL_FEATURES = [0, 1, 2, 3, 4, 5, 6]
+CATEGORICAL_FEATURES = [7]
 MODEL_CONFIG = {
     "random_forest": {
         "n_estimators": 100,
@@ -27,3 +29,4 @@ MLFLOW_EXPERIMENT_NAME = "diabetes_classification"
 MODEL_NAME = "RandomForestClassifier"
 
 LAMBDA_PACKAGE_SIZE_LIMIT = 50 * 1024 * 1024
+print(MODELS_DIR)
