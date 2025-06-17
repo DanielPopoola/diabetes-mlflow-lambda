@@ -78,7 +78,7 @@ diabetes-mlflow-lambda/
 
 ```bash
 # Clone and setup project
-git clone <repository-url>
+git clone https://github.com/DanielPopoola/diabetes-mlflow-lambda.git
 cd diabetes-mlflow-lambda
 
 # Initialize with UV
